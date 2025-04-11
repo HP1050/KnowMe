@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #fbfafa;
+    color: black;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/*---------------------------------------Education----------------------*/
+.head-title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+}
+.edu{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+#rgu{
+    width: 270px;
+    height: 270px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+#jss{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+}
+.edu img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(154, 105, 252, 0.5),#fe90d2);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 40px;
+    overflow: hidden;
+    font-size: 20px;
+    transition: height 0.5s;
+}
+.layer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.edu:hover img{
+    transform: translateX(-100%);
+    
+}
+.edu:hover .layer{
+    height: 85%;
+    width: 100%;
+}
+/*---------------------------------------Skills----------------------------------------------*/
+#microbio-skill{
+    padding: 20px 0;
+}
+.head{
+    text-align: center;
+    color: #000000;
+    padding: 2rem;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+    background: linear-gradient(rgba(150, 101, 248, 0.6),#ed8bdf);
+    border-radius: 5px;
+    width: 880px;
+    padding: 20px;
+}
+.skills-box{
+    padding: 1rem;
+    color: #030303;
+}
+.skills-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.skills-title::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #ff07e6;
+    transition: 0.3s;
+}
+.skills-box:hover .skills-title::before{
+    width: 35px;
+}
+.skills-title::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #6a07ff;
+    transition: 0.3s;
+}
+.skills-box:hover .skills-title::after{
+    width: 35px;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    position: relative;
+}
+.img::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+}
+.skills-title h3{
+    font-family: "Dancing Script", cursive;
+    color: #060606;
+    margin-top: 0.5rem;
+    font-weight: 700;
+}
+.skill-icon{
+    width: 90px;
+    z-index: 2;
+    border: 4px;
+    border-style: double;
+}
+.skill-icon:hover{
+    width: 100px;
+    transition: .3s;
+}
+/*--------------------------------------Projects-----------------------------------------------*/
+#project{
+    padding: 40px 0;
+    flex-direction:column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#project .project-head{
+    margin-bottom: 20px;
+}
+#project .project-contents{
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+#project .project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px;
+}
+#project .project-info{
+    padding: 30px;
+    flex-basis: 100px;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    color: #000000;
+}
+#project .project-info h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+#project .project-info h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: 5px;
+}
+#project .project-info p{
+    margin-top: 10px;
+}
+#project .project-img{
+    display: flex;          
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}   
+#project .project-img img{    
+    border: 3px solid #000;
+    transition: 0.3s ease transform;
+    width: 60%;        
+    height: 60%;
+    padding: 7px;
+}
+/*-----------------------------Conferences---------------------------------------*/
+#conferences{
+    box-sizing: box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+li{
+    margin: 8px;
+}
+.box{
+    position: relative;
+    width: 880px;
+    height: 530px;
+    background: linear-gradient(#DF5A5A, #E9D553);
+    border-radius: 10px;
+    padding: 40px;
+}
+.box h1{
+    margin-bottom: 50px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,4fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box .list{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    width: 720px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 10px;
+    background: #F0EEE0;
+    background-size: 100%;
+    transition: 0.3s ease;
+    margin-top: 10px; 
+    margin-left: 35px;
+    mix-blend-mode: multiply;  
+}
+.box .list:hover{
+    background: linear-gradient(rgba(250, 246, 246, 0.6),#9e7a04);
+    padding: 15px;
+    height: 170px;
+    width: 740px;
+    transform: scale(1.1);
+    border: 1px dashed black;
+}
+.box .list .conf-info h3{
+    font-weight: 600;
+    line-height: 1.2em;
+    transition: 0.5s;
+}
+.box .list .conf-info h4{
+    font-size: 1em;
+    transition: 0.5s;
+}
+#back{
+    margin: 10px;             
+    padding: 20px;            
+    text-align: left; 
+    top: 0;
+}
+#back a {
+    display: inline-block;
+    justify-content: left;
+    align-items: left;
+    font-size: 18px;
+    text-decoration: none;
+    color: darkblue;
+}
