@@ -113,6 +113,70 @@ body{
     transform: scale(1.1);
     transition: .3s;
 }
+/*-----------------------------Certification---------------------------------------*/
+#certification{
+    box-sizing: box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+li{
+    margin: 5px;
+}
+.box{
+    position: relative;
+    width: 580px;
+    height: 380px;
+    background: linear-gradient(#56e4f7, #0d88f4);
+    border-radius: 10px;
+    padding: 20px;
+}
+.box h1{
+    margin-bottom: 50px;
+    color: #000000;
+    text-shadow: 5px 5px 5px #ffffff;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(500px,4fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.box .list{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 460px;
+    padding: 10px;
+    gap: 15px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    background-size: 100%;
+    transition: 0.3s ease;
+    margin-top: 10px; 
+    margin-left: 50px;
+}
+.box .list:hover{
+    background: linear-gradient(rgb(253, 253, 253),#56e4f7);
+    padding: 5px;
+    height: 90px;
+    width: 470px;
+    transform: scale(1.1);
+    border: 1px dashed black;
+}
+.box .list .cert-info h3{
+    font-weight: 600;
+    line-height: 1.2em;
+    transition: 0.5s;
+}
+.box .list .cert-info h4{
+    font-size: 1em;
+    transition: 0.5s;
+}
 .social-icons{
     display: flex;
     text-align: center;

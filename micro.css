@@ -251,6 +251,7 @@ li{
 }
 .box h1{
     margin-bottom: 50px;
+    text-shadow: 5px 5px 5px #ffffff;
 }
 .list{
     display: grid;
